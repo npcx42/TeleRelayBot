@@ -1,40 +1,51 @@
-# TeleRelayBot  
+[📖 Russian version of the guide is available here](https://github.com/npcx42/TeleRelayBot/blob/main/README.md)
 
-### ⚠️ First update in a long time!  
+# TeleRelayBot
 
-## 📌 Description  
-This bot automatically forwards messages from a Telegram channel to your Discord server.  
+### ⚠️ First update in a while!
 
-## 🔧 Installation  
+## Description  
+This bot automatically forwards messages from a Telegram channel to your Discord server.
 
 ### ❗ Requirements:  
-✅ **Your Telegram channel must be public**  
+**Your Telegram channel must be public.**
+
+## Installation
 
 ### 1️⃣ Install Python and dependencies  
-- The bot works with **Python 3.10 and later**. You can download it [here](https://www.python.org/downloads/).  
-- **Check "Add to PATH"** during installation, or the script won’t work.  
-- **Restart your computer** after installation (recommended).  
+- The bot works with **Python 3.10 and newer**. You can download it [here](https://www.python.org/downloads/).  
+- When installing, make sure to check **"Add to PATH"**, otherwise, the bot won’t work.  
+- After installation, **restart your computer** (optional, but recommended).
 
 ### 2️⃣ Install dependencies  
-Open a terminal in the script’s folder and run:  
+Open the terminal in the folder with the bot and run this command:
 ```sh
 pip install -r requirements.txt
-```  
+```
 
-### 3️⃣ Configure the bot  
-Open `config.json` and enter your details:  
+### 3️⃣ Set up the config file  
+Open the `config.json` file and fill it in with your details:
 ```json
 {
-  "TOKEN_BOT": "Your_Bot_Token",
-  "CHANNEL_URL": "https://t.me/s/yourchannel",
-  "DISCORD_CHANNEL_ID": "Your_Discord_Channel_ID",
-  "DISCORD_BOT_ID": "Your_Discord_Bot_ID"
-  "discord_debug_access_uid": ["your id", "your friend id"]
-
+    "token_bot": "your_bot_token",
+    "channel_url": "https://t.me/s/channel",
+    "discord_bot_id": "your_bot_id",
+    "discord_channel_id": "channel_id",
+    "discord_thread_name": "Comments",
+    "discord_debug_access_uid": ["user_id1", "user_id2"],
+    "media_support": true,
+    "download_media": true,
+    "auto_delete_messages": false,
+    "auto_create_threads": false
 }
-```  
-Now you can start the script and enjoy! 🚀  
+```
 
-## ❓ Support  
-If the bot isn’t working, create an issue on GitHub: [click here](https://github.com/npcx42/telegram-to-discord-bot/issues/new).  
-~~Discord support is temporarily unavailable.~~
+Keep in mind:
+- You can enable/disable media support in the config.
+- You can turn off auto-deleting messages and auto-creating threads.
+
+Once everything is set up, just run ```python bot.py``` and enjoy the bot! 🚀
+
+## ❓ Feedback  
+If you're having issues with the bot, create an issue on GitHub: [here](https://github.com/npcx42/TeleRelayBot/issues/new).  
+~~Discord support is temporarily unavailable. For now.~~ 

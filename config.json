@@ -1,8 +1,12 @@
 {
-    "token_bot": "first of all you need a token",
+    "token_bot": "your_bot_token",
     "channel_url": "https://t.me/s/channel",
-    "discord_bot_id": "here goes the bot id",
-    "discord_channel_id": "channel id must be here",
-    "discord_thread_name": "you can use this for comments inside a thread",
-    "discord_debug_access_uid": ["your id", "your friend id"]
+    "discord_bot_id": "your_bot_id",
+    "discord_channel_id": "channel_id",
+    "discord_thread_name": "Comments",
+    "discord_debug_access_uid": ["user_id2", "user_id2"],
+    "media_support": true,
+    "download_media": true,
+    "auto_delete_messages": false,
+    "auto_create_threads": false
 }
